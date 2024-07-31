@@ -1,0 +1,78 @@
+.container-c{
+    max-width: 1218px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: 'mbold';
+    src: url('../fonts/Montserrat-Bold.ttf')
+}
+@font-face {
+    font-family: 'msemibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+}
+@font-face {
+    font-family: 'mregular';
+    src: url('../fonts/Montserrat-Regular.ttf')
+}
+@font-face {
+    font-family: 'mmedium';
+    src: url('../fonts/Montserrat-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'sbold';
+    src: url('../fonts/SourceSansPro-Bold.ttf');
+}
+@font-face {
+    font-family: 'ssemibold';
+    src: url('../fonts/SourceSansPro-Semibold.ttf');
+}
+@font-face {
+    font-family: 'sitalic';
+    src: url('../fonts/SourceSansPro-Italic.ttf');
+}
+@font-face {
+    font-family: 'sregular';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+
+
+.mbold{
+    font-family: 'mbold';
+}
+
+.msemibold{
+    font-family: 'msemibold';
+}
+
+.mregular{
+    font-family: 'mregular';
+}
+
+.mmedium{
+    font-family: 'mmedium';
+}
+
+.sbold{
+    font-family: 'sbold';
+}
+
+.ssemibold{
+    font-family: 'ssemibold';
+}
+
+.sitalic{
+    font-family: 'sitalic';
+}
+
+.sregular{
+    font-family: 'sregular';
+}
+
+.hover-over:hover > img{
+    filter: brightness(1) invert(0);
+}
