@@ -77,3 +77,6 @@
     filter: brightness(1) invert(0);
 }
 
+.hover-svg:hover > svg path{
+    fill: #fff;
+}
