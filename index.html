@@ -10,6 +10,22 @@
     <script>
         tailwind.config = {
           theme: {
+            screens: {
+                '2xl': {'max': '1535px'},
+                // => @media (max-width: 1535px) { ... }
+
+                'xl': {'max': '1279px'},
+                // => @media (max-width: 1279px) { ... }
+
+                'lg': {'max': '1024px'},
+                // => @media (max-width: 1023px) { ... }
+
+                'md': {'max': '767px'},
+                // => @media (max-width: 767px) { ... }
+
+                'sm': {'max': '639px'},
+                // => @media (max-width: 639px) { ... }
+              },
             extend: {
               lineHeight: {
                   'mycustom': '146.3%',
@@ -51,736 +67,736 @@
 </head>
 <body class="bg-bgcolor text-cblack  tetx-base h-screen w-screen sregular">
     
-    <header class="bg-cblack py-[7px]">
-        <div class="container-c flex items-center justify-between">
-          <div class="flex items-center gap-6 text-white text-sm capitalize">
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full ">News</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Lifestyle</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Advertise</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Contact</a>
-          </div>
-          <div class="flex items-center gap-4">
-            <a href="#">
-              <img src="img/facebook.svg" alt="facebook">
-            </a>
-            <a href="#">
-              <img src="img/twitter.svg" alt="twitter">
-            </a>
-            <a href="#">
-              <img src="img/ins.svg" alt="instazam">
-            </a>
-          </div>
+  <header class="bg-cblack py-[7px]">
+      <div class="container mx-auto max-w-[1218px] lg:max-w-[945px]  flex items-center justify-between">
+        <div class="flex items-center gap-6 text-white text-sm capitalize">
+          <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full ">News</a>
+          <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Lifestyle</a>
+          <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Advertise</a>
+          <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Contact</a>
         </div>
-    </header>
-
-    <nav class="bg-white py-2  text-sm mb-6">
-      <div class="container-c flex items-center">
-        <div class="flex items-center gap-8 mbold text-[28px] mr-[70px]">
+        <div class="flex items-center gap-4">
           <a href="#">
-            <img src="img/hamburger.svg" alt="hamburger">
+            <img src="img/facebook.svg" alt="facebook">
           </a>
           <a href="#">
-            Deus
+            <img src="img/twitter.svg" alt="twitter">
           </a>
-      </div>
-        <div class="flex items-center gap-6 uppercase sbold">
-          <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">home</a>
-          <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">posts</a>
-          <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">pages</a>
-          <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">features</a>
-          <a href="#">purchase</a>
+          <a href="#">
+            <img src="img/ins.svg" alt="instazam">
+          </a>
         </div>
-        <a href="#" class="ml-auto">
-          <img src="img/search_icon.svg" alt="search">
-        </a>
       </div>
-    </nav>
+  </header>
 
-    <section class="container-c mb-12">
-
-        <div class="bg-white flex tetx-cgray rounded-[5px] overflow-hidden  items-center pr-[9px] mb-6">
-          <a href="#" class="bg-cblue py-[9px] px-4 flex items-center gap-4 uppercase text-white sbold text-sm hover-over hover:bg-white hover:text-cblue transition-all ease-in delay:75">
-            <img src="img/icon.svg" alt="flash-icon" class="brightness-0	invert">
-            newsflash
-          </a>
-
-          <div class="pl-6">
-            Fashion month always has one dangerous side effect—it makes us want to shop.
+      <nav class="bg-white py-2  text-sm mb-6">
+        <div class="container mx-auto max-w-[1218px] lg:max-w-[945px] flex items-center">
+          <div class="flex items-center gap-8 mbold text-[28px] mr-[70px]">
+            <a href="#">
+              <img src="img/hamburger.svg" alt="hamburger">
+            </a>
+            <a href="#">
+              Deus
+            </a>
+        </div>
+          <div class="flex items-center gap-6 uppercase sbold">
+            <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">home</a>
+            <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">posts</a>
+            <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">pages</a>
+            <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">features</a>
+            <a href="#">purchase</a>
           </div>
-        
-            <a href="#" class=" flex items-center gap-5 ml-auto h-6">
-                <img src="img/leftarrow.svg" alt="left">
-                <p class="relative h-full after:content-[''] after:absolute  after:right-0 after:top-0 after:w-[2px] after:h-full after:bg-graystick"></p>
-                <img src="img/rightarrow.svg" alt="right">
+          <a href="#" class="ml-auto">
+            <img src="img/search_icon.svg" alt="search">
+          </a>
+        </div>
+      </nav>
+
+      <section class="container mx-auto max-w-[1218px] lg:max-w-[945px] mb-12">
+
+          <div class="bg-white flex tetx-cgray rounded-[5px] overflow-hidden  items-center pr-[9px] mb-6">
+            <a href="#" class="bg-cblue py-[9px] px-4 flex items-center gap-4 uppercase text-white sbold text-sm hover-over hover:bg-white hover:text-cblue transition-all ease-in delay:75">
+              <img src="img/icon.svg" alt="flash-icon" class="brightness-0	invert">
+              newsflash
             </a>
 
-        </div>
+            <div class="pl-6">
+              Fashion month always has one dangerous side effect—it makes us want to shop.
+            </div>
+          
+              <a href="#" class=" flex items-center gap-5 ml-auto h-6">
+                  <img src="img/leftarrow.svg" alt="left">
+                  <p class="relative h-full after:content-[''] after:absolute  after:right-0 after:top-0 after:w-[2px] after:h-full after:bg-graystick"></p>
+                  <img src="img/rightarrow.svg" alt="right">
+              </a>
 
-        <div class="flex flex-wrap -mr-2 -ml-2">
-          <div class="basis-1/2 p-2 flex-col space-y-2">
-            <div class="flex items-center bg-white rounded-[5px] overflow-hidden">
-             <div class="px-8 pt-8 pb-[47px] w-1/2">
-              <a href="#">
-                <h2 class="msemibold  leading-mycustom -tracking-[5%] line-clamp-3">3 Founders With Booming Businesses Share Stories About Their Difficult Early Somesith happen in the past</h2>
-                <p class="mt-4 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-              </a>
-             </div>
-                <a href="#" class="relative  h-full w-1/2" >
-                  <img src="img/hero_img-4.jpg" alt="main" class=" w-full h-full object-cover">
-                  <button class="text-white bg-bluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">world</button>
-                 </a>
-            </div>
-            <div class="flex items-center flex-row-reverse bg-white rounded-[5px] overflow-hidden">
-              <a href="#" class="px-8 pt-8 pb-[46px] w-1/2">
-                <h2 class="msemibold  leading-mycustom -tracking-[5%] line-clamp-3">3 Things You Can Do to Get Your Customers Talking About Your Business Somesith happen in the past</h2>
-                <p class="mt-4 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-              </a>
-               <a href="#" class="relative h-full w-1/2">
-                <img src="img/hero_img_2.jpg" alt="main" class=" w-full h-full object-cover inline-block m-0 p-0">
-                <button class="text-white bg-violetbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">fashion</button>
-               </a>
-            </div>
-            <div class="flex items-center bg-white rounded-[5px] overflow-hidden">
-              <a href="#" class="px-8 pt-8 pb-[47px] w-1/2">
-                <h2 class="msemibold  leading-mycustom -tracking-[5%] line-clamp-3">Want to Start Selling Online? Here's How to Get Past 5 Common Challenges happen in the past</h2>
-                <p class="mt-4 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-              </a>
-               <a href="#" class="relative h-full w-1/2">
-                <img src="img/hero_img_3.jpg" alt="main" class=" w-full h-full object-cover inline-block m-0 p-0">
-                <button class="text-white bg-lightbluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">business</button>
-               </a>
-            </div>
           </div>
-          <div class="basis-1/2 p-2">
-            <div class="flex flex-col bg-white rounded-[5px] overflow-hidden">
-              <a href="#" class="relative ">
-                <img src="img/hero_img-4.jpg" alt="main" class=" w-full h-full object-cover inline-block m-0 p-0">
-                <button class="text-white bg-greenbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">lifestyle</button>
-               </a>
-               <a href="#" class="pt-[26px] px-8 pb-8">
-                <h2 class="msemibold text-[32px] -tracking-[5%] line-clamp-2 ">What Days and Hours are PH Online Shoppers Most Likely to Buy?</h2>
-                <p class="mt-[35px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-               </a>
-            </div>
-          </div>
-        </div>
-    </section>
-   
-    <section class="container-c mb-[46px]">
-      <div class="flex flex-wrap -ml-[15px] -mr-[15px] mb-12">
-        <div class="basis-2/3 p-[15px]">
-         <div class="flex items-center justify-between uppercase pt-8 mb-8 border-t-borderbg border-solid border-[3px]">
-          <div class="mbold text-[21px] tracking-custom">latest news</div>
-          <div class="flex items-center gap-6 sbold">
-            <a href="#" class="text-cblue relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblue after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">all</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">world</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">lifestyle</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">business</a>
-            <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">fashion</a>
-          </div>
-         </div>
-            <div class="flex flex-wrap -ml-[15px] -mr-[15px]">
-              <div class="basis-1/2 p-[15px]">
-                <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
-                  <div class="relative w-full">
-                    <img src="img/base01.jpg" alt="base-1" class="w-full">
-                    <button class="text-white bg-bluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">world</button>
-                  </div>
-                  <div class="px-8 pt-8 pb-[46px]">
-                    <a href="#">
-                      <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">Follow These Smartphone Habits of Successful Entrepreneurs</h2>
-                      <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                    </a>
-                    <div class="leading-linecustom tetx-cgray mt-6">
-                      iPrice Group report offers insights on daily e-commerce activity in the ...
-                    </div>
-                  </div>
+
+          <div class="flex flex-wrap -mr-2 -ml-2">
+            <div class="basis-1/2 p-2 flex-col space-y-2">
+                <div class="flex items-center bg-white rounded-[5px] overflow-hidden">
+                <div class="px-8 pt-8 pb-[47px] w-1/2 lg:p-5">
+                  <a href="#">
+                    <h2 class="msemibold  leading-mycustom -tracking-[5%] line-clamp-3">3 Founders With Booming Businesses Share Stories About Their Difficult Early Somesith happen in the past</h2>
+                    <p class="mt-4 lg:mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                  </a>
                 </div>
-              </div>
-              <div class="basis-1/2 p-[15px]">
-                <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
-                  <div class="relative w-full">
-                    <img src="img/base02.jpg" alt="base-1" class="w-full">
+                    <a href="#" class="relative  h-full w-1/2" >
+                      <img src="img/hero_img-4.jpg" alt="main" class=" w-full h-full object-cover">
+                      <button class="text-white bg-bluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">world</button>
+                    </a>
+                </div>
+                <div class="flex items-center flex-row-reverse bg-white rounded-[5px] overflow-hidden">
+                  <a href="#" class="px-8 pt-8 pb-[46px] w-1/2 lg:p-5">
+                    <h2 class="msemibold  leading-mycustom -tracking-[5%] line-clamp-3">3 Things You Can Do to Get Your Customers Talking About Your Business Somesith happen in the past</h2>
+                    <p class="mt-4 lg:mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                  </a>
+                  <a href="#" class="relative h-full w-1/2">
+                    <img src="img/hero_img_2.jpg" alt="main" class=" w-full h-full object-cover inline-block m-0 p-0">
                     <button class="text-white bg-violetbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">fashion</button>
-                  </div>
-                  <div class="px-8 pt-8 pb-[46px]">
-                    <a href="#">
-                      <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">3 Things You Can Do to Get Your Customers Talking About Your Business</h2>
-                      <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                    </a>
-                    <div class="leading-linecustom tetx-cgray mt-6">
-                      iPrice Group report offers insights on daily e-commerce activity in the ...
-                    </div>
-                  </div>
+                  </a>
                 </div>
-              </div>
-              <div class="basis-1/2 p-[15px]">
-                <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
-                  <div class="relative w-full">
-                    <img src="img/base03.jpg" alt="base-3" class="w-full">
-                    <button class="text-white bg-corange rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">business</button>
-                  </div>
-                  <div class="px-8 pt-8 pb-[46px]">
-                    <a href="#">
-                      <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">Lose These 7 Bad Habits If You're Serious About Becoming a Millionaire Smartphone</h2>
-                      <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                    </a>
-                    <div class="leading-linecustom tetx-cgray mt-6">
-                      iPrice Group report offers insights on daily e-commerce activity in the ...
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="basis-1/2 p-[15px]">
-                <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
-                  <div class="relative w-full">
-                    <img src="img/base04.jpg" alt="base-4" class="w-full">
-                    <button class="text-white bg-greenbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">lifestyle</button>
-                  </div>
-                  <div class="px-8 pt-8 pb-[46px]">
-                    <a href="#">
-                      <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">10 Horrible Habits You're Doing Right Now That Are Draining Your Energy and Kill You soon</h2>
-                      <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                    </a>
-                    <div class="leading-linecustom tetx-cgray mt-6">
-                      iPrice Group report offers insights on daily e-commerce activity in the ...
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="basis-1/3 p-[15px] flex-1">
-          <div class="flex flex-col gap-10">
-            <div class="drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)] bg-white rounded-[5px] overflow-hidden py-8 px-6">
-                <h2 class="uppercase mbold tracking-custom mb-6">popular posts</h2>
-                <div class="flex flex-col gap-8">
-                  <div class="flex items-center gap-4">
-                      <div class="size-[88px] rounded-full w-1/2 overflow-hidden ">
-                        <img src="img/post01.jpg" alt="post01" class="w-full h-full">
-                      </div>
-                      <a href="#">
-                        <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Follow These Smartphone Habits of Successful Entrepreneurs</h2>
-                        <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                      </a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                      <div class="w-1/2 size-[88px] rounded-full overflow-hidden ">
-                        <img src="img/premium_2.avif" alt="post02" class="h-full w-full object-cover">
-                      </div>
-                      <div href="#" class="block">
-                        <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2 ">Is Uber Considering To Sell its Southeast Asia Business to Grab?</h2>
-                        <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                      </div>
-                  </div>
-                  <div class="flex items-center gap-4">
-                      <div class="size-[88px] rounded-full w-1/2 overflow-hidden ">
-                        <img src="img/post03.jpg" alt="post03" class="w-full h-full">
-                      </div>
-                      <a href="#">
-                        <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Gov’t Toughens Rules to Ensure 3rd Telco Player Doesn’t Slack Off</h2>
-                        <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                      </a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                      <div class="size-[88px] rounded-full w-1/2 overflow-hidden ">
-                        <img src="img/post04.jpg" alt="post04" class="w-full h-full">
-                      </div>
-                      <a href="#">
-                        <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Is Uber Considering To Sell its Southeast Asia Business to Grab?</h2>
-                        <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                      </a>
-                  </div>
+                <div class="flex items-center bg-white rounded-[5px] overflow-hidden">
+                  <a href="#" class="px-8 pt-8 pb-[47px] w-1/2 lg:p-5">
+                    <h2 class="msemibold  leading-mycustom -tracking-[5%] line-clamp-3">Want to Start Selling Online? Here's How to Get Past 5 Common Challenges happen in the past</h2>
+                    <p class="mt-4 lg:mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                  </a>
+                  <a href="#" class="relative h-full w-1/2">
+                    <img src="img/hero_img_3.jpg" alt="main" class=" w-full h-full object-cover inline-block m-0 p-0">
+                    <button class="text-white bg-lightbluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">business</button>
+                  </a>
                 </div>
             </div>
-
-            <div class="drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)] rounded-[5px] overflow-hidden py-8 px-6 bg-white">
-              <div class="flex flex-col">
-                <h2 class="uppercase mbold tracking-custom mb-6">newsletter</h2>
-                <form class="flex flex-col gap-5">
-                  <div class="flex items-center gap-2 text-cgrey">
-                    <img src="img/letter.svg" alt="letter">
-                    Subscribe for our daily news
-                  </div>
-                 <div class="flex items-center justify-between rounded-[5px] overflow-hidden">
-                  <input type="text" id="type" class="focus:outline-0 bg-white ring-1 ring-rings ring-inset py-[14px] px-[15px] text-cgrey w-[258px]">
-                  <label for="type" class="text-white bg-cblue py-4 px-[17px] sbold text-sm ring-1 ring-inset ring-cblue cursor-pointer">Sign up</label>
-                 </div>
-                </form>
-              </div>
-            </div>  
-            <div class="drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)] rounded-[5px] overflow-hidden py-8 px-6 bg-white">
-              <h2 class="uppercase mbold tracking-custom mb-6">LET'S HANG OUT ON SOCIAL</h2>
-              <div class="flex items-center justify-between flex-wrap sbold text-sm">
-                <a href="#" class="w-[148px] flex items-center gap-[10px] uppercase text-white bg-twit ring-1 ring-twit ring-inset py-[14px] px-[25px] hover-over hover:text-twit hover:bg-white mb-5">
-                  <img src="img/twitter-1.svg" alt="twit" class="brightness-0	invert">
-                  TWITTER
+            <div class="basis-1/2 p-2">
+              <div class="flex flex-col bg-white rounded-[5px] overflow-hidden">
+                <a href="#" class="relative ">
+                  <img src="img/hero_img-4.jpg" alt="main" class=" w-full h-full object-cover inline-block m-0 p-0">
+                  <button class="text-white bg-greenbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">lifestyle</button>
                 </a>
-                <a href="#" class="w-[148px] flex items-center gap-[10px] uppercase text-white bg-facebook ring-1 ring-facebook ring-inset py-[14px] px-[25px] hover-over hover:text-facebook hover:bg-white mb-5">
-                  <img src="img/acebook.svg" alt="face" class="brightness-0	invert" >
-                  facebook
-                </a>
-                <a href="#" class="w-[148px] flex items-center gap-[10px] uppercase text-white bg-google ring-1 ring-inset ring-google py-[14px] px-[25px] hover-over hover:text-google hover:bg-white mb-5">
-                  <img src="img/google-.svg" alt="face" class="brightness-0	invert" >
-                  google+
-                </a>
-                <a href="#" class="w-[148px] flex items-center gap-[10px] uppercase text-white bg-insta ring-1 ring-inset ring-insta py-[14px] px-[25px] hover-over hover:text-insta hover:bg-white mb-5">
-                  <img src="img/instazam.svg" alt="face" class="brightness-0	invert" >
-                  instagram
-                </a>
-                <a href="#" class="w-[148px] flex items-center gap-[10px] uppercase text-white bg-pint ring-1 ring-inset ring-pint py-[14px] px-[25px] hover-over hover:text-pint hover:bg-white">
-                  <img src="img/pinterest.svg" alt="face" class="brightness-0	invert" >
-                  pinterest
-                </a>
-                <a href="#" class="w-[148px] flex items-center gap-[10px] uppercase text-white bg-linked ring-1 ring-inset ring-linked py-[14px] px-[25px] hover-over hover:text-linked hover:bg-white">
-                  <img src="img/linkedin.svg" alt="face" class="brightness-0	invert" >
-                  linkedin
+                <a href="#" class="pt-[26px] px-8 pb-8 lg:p-5">
+                  <h2 class="msemibold text-[32px] lg:text-[28px] -tracking-[5%] line-clamp-2 ">What Days and Hours are PH Online Shoppers Most Likely to Buy?</h2>
+                  <p class="mt-[35px] lg:mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="flex items-center justify-center">
-        <img src="img/ad.jpg" alt="ad">
-      </div>
-    </section>
-
-    <section class="container-c mb-12">
-      <div class="flex items-center justify-between py-8 border-[3px] border-t-borderbg border-solid">
-        <h2 class="uppercase mbold text-[21px] tracking-custom">editors picks</h2>
-        <div class="flex items-center gap-[5px]">
-          <div class="flex items-center justify-center rounded-[5px] bg-white py-2 px-[11px] cursor-pointer">
-            <img src="img/leftarrow.svg" alt="arrow">
+      </section>
+   
+      <section class="container mx-auto max-w-[1218px] lg:max-w-[945px] mb-[46px]">
+        <div class="flex flex-wrap -ml-[15px] -mr-[15px] mb-12">
+          <div class="basis-2/3 p-[15px] lg:p-2">
+          <div class="flex items-center justify-between uppercase pt-8 mb-8 border-t-borderbg border-solid border-[3px]">
+            <div class="mbold text-[21px] tracking-custom">latest news</div>
+            <div class="flex items-center gap-6 sbold">
+              <a href="#" class="text-cblue relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblue after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">all</a>
+              <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">world</a>
+              <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">lifestyle</a>
+              <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">business</a>
+              <a href="#" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.2px] after:bg-cblack after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">fashion</a>
+            </div>
           </div>
-          <div class="flex items-center justify-center rounded-[5px] bg-white py-2 px-[11px] cursor-pointer">
-            <img src="img/rightarrow.svg" alt="arrow">
+              <div class="flex flex-wrap -ml-[15px] -mr-[15px] lg:-ml-2 lg:-mr-2 ">
+                <div class="basis-1/2 p-[15px] lg:p-2">
+                  <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
+                    <div class="relative w-full">
+                      <img src="img/base01.jpg" alt="base-1" class="w-full">
+                      <button class="text-white bg-bluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">world</button>
+                    </div>
+                    <div class="px-8 pt-8 pb-[46px] lg:px-6 lg:pt-6 lg:pb-10">
+                      <a href="#">
+                        <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">Follow These Smartphone Habits of Successful Entrepreneurs</h2>
+                        <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                      </a>
+                      <div class="leading-linecustom tetx-cgray mt-6">
+                        iPrice Group report offers insights on daily e-commerce activity in the ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basis-1/2 p-[15px] lg:p-2">
+                  <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
+                    <div class="relative w-full">
+                      <img src="img/base02.jpg" alt="base-1" class="w-full">
+                      <button class="text-white bg-violetbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">fashion</button>
+                    </div>
+                    <div class="px-8 pt-8 pb-[46px] lg:px-6 lg:pt-6 lg:pb-10">
+                      <a href="#">
+                        <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">3 Things You Can Do to Get Your Customers Talking About Your Business</h2>
+                        <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                      </a>
+                      <div class="leading-linecustom tetx-cgray mt-6">
+                        iPrice Group report offers insights on daily e-commerce activity in the ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basis-1/2 p-[15px] lg:p-2">
+                  <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
+                    <div class="relative w-full">
+                      <img src="img/base03.jpg" alt="base-3" class="w-full">
+                      <button class="text-white bg-corange rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">business</button>
+                    </div>
+                    <div class="px-8 pt-8 pb-[46px] lg:px-6 lg:pt-6 lg:pb-10">
+                      <a href="#">
+                        <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">Lose These 7 Bad Habits If You're Serious About Becoming a Millionaire Smartphone</h2>
+                        <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                      </a>
+                      <div class="leading-linecustom tetx-cgray mt-6">
+                        iPrice Group report offers insights on daily e-commerce activity in the ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basis-1/2 p-[15px] lg:p-2">
+                  <div class="flex flex-col rounded-[5px] bg-white overflow-hidden drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)]">
+                    <div class="relative w-full">
+                      <img src="img/base04.jpg" alt="base-4" class="w-full">
+                      <button class="text-white bg-greenbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 left-4 mbold text-[10px]">lifestyle</button>
+                    </div>
+                    <div class="px-8 pt-8 pb-[46px] lg:px-6 lg:pt-6 lg:pb-10">
+                      <a href="#">
+                        <h2 class="msemibold  leading-mycustom tracking-necustom line-clamp-2">10 Horrible Habits You're Doing Right Now That Are Draining Your Energy and Kill You soon</h2>
+                        <p class="mt-7 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                      </a>
+                      <div class="leading-linecustom tetx-cgray mt-6">
+                        iPrice Group report offers insights on daily e-commerce activity in the ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="basis-1/3 p-[15px] lg:p-2">
+            <div class="flex flex-col gap-10 lg:gap-7">
+              <div class="drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)] bg-white rounded-[5px] overflow-hidden py-8 px-6 lg:py-6 lg:px-4 ">
+                  <h2 class="uppercase mbold tracking-custom mb-6">popular posts</h2>
+                  <div class="flex flex-col gap-8 lg:gap-6">
+                    <div class="flex items-center gap-4 lg:gap-2">
+                        <div class="size-[88px] lg:size-[77px] rounded-full w-1/2 overflow-hidden ">
+                          <img src="img/post01.jpg" alt="post01" class="w-full h-full">
+                        </div>
+                        <a href="#" class="w-1/2">
+                          <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Follow These Smartphone Habits of Successful Entrepreneurs</h2>
+                          <p class="mt-3 ssemibold text-cgrey text-xs lg:line-clamp-1 ">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-2">
+                        <div class="w-1/2 size-[88px] lg:size-[77px] rounded-full overflow-hidden ">
+                          <img src="img/premium_2.avif" alt="post02" class="h-full w-full object-cover">
+                        </div>
+                        <a href="#" class="w-1/2">
+                          <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2 ">Is Uber Considering To Sell its Southeast Asia Business to Grab?</h2>
+                          <p class="mt-3 ssemibold text-cgrey text-xs lg:line-clamp-1 ">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-2">
+                        <div class="size-[88px] lg:size-[77px] rounded-full w-1/2 overflow-hidden ">
+                          <img src="img/post03.jpg" alt="post03" class="w-full h-full">
+                        </div>
+                        <a href="#" class="w-1/2">
+                          <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Gov’t Toughens Rules to Ensure 3rd Telco Player Doesn’t Slack Off</h2>
+                          <p class="mt-3 ssemibold text-cgrey text-xs lg:line-clamp-1 ">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-[10px]">
+                        <div class="size-[88px] lg:size-[77px] rounded-full w-1/2 overflow-hidden ">
+                          <img src="img/post04.jpg" alt="post04" class="w-full h-full">
+                        </div>
+                        <a href="#" class="w-1/2">
+                          <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Is Uber Considering To Sell its Southeast Asia Business to Grab?</h2>
+                          <p class="mt-3 ssemibold text-cgrey text-xs lg:line-clamp-1 ">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)] rounded-[5px] overflow-hidden py-8 px-6 lg:py-6 lg:px-4 lg:py-6 lg:px-4 bg-white">
+                <div class="flex flex-col">
+                  <h2 class="uppercase mbold tracking-custom mb-6">newsletter</h2>
+                  <form class="flex flex-col gap-5">
+                    <div class="flex items-center gap-2 text-cgrey">
+                      <img src="img/letter.svg" alt="letter">
+                      Subscribe for our daily news
+                    </div>
+                  <div class="flex items-center justify-between rounded-[5px] overflow-hidden">
+                    <input type="text" id="type" class="focus:outline-0 bg-white ring-1 ring-rings ring-inset py-[14px] px-[15px] text-cgrey w-[258px] lg:w-[211px]">
+                    <label for="type" class="text-white bg-cblue py-4 px-[17px] lg:px-[10px]  sbold text-sm ring-1 ring-inset ring-cblue cursor-pointer">Sign up</label>
+                  </div>
+                  </form>
+                </div>
+              </div>  
+              <div class="drop-shadow-[0_2px_3px_rgba(0,0,0,0.10)] rounded-[5px] overflow-hidden py-8 px-6 lg:py-6 lg:px-4 bg-white">
+                <h2 class="uppercase mbold tracking-custom mb-6">LET'S HANG OUT ON SOCIAL</h2>
+                <div class="flex items-center justify-between lg:jus flex-wrap sbold text-sm">
+                  <a href="#" class="w-[148px] lg:w-[130px] flex items-center gap-[10px] uppercase text-white bg-twit ring-1 ring-twit ring-inset py-[14px] px-[25px] lg:px-5  hover-over hover:text-twit hover:bg-white mb-5">
+                    <img src="img/twitter-1.svg" alt="twit" class="brightness-0	invert">
+                    TWITTER
+                  </a>
+                  <a href="#" class="w-[148px] lg:w-[130px] flex items-center gap-[10px] uppercase text-white bg-facebook ring-1 ring-facebook ring-inset py-[14px] px-[25px] lg:px-5 hover-over hover:text-facebook hover:bg-white mb-5">
+                    <img src="img/acebook.svg" alt="face" class="brightness-0	invert" >
+                    facebook
+                  </a>
+                  <a href="#" class="w-[148px] lg:w-[130px] flex items-center gap-[10px] uppercase text-white bg-google ring-1 ring-inset ring-google py-[14px] px-[25px] lg:px-5 hover-over hover:text-google hover:bg-white mb-5">
+                    <img src="img/google-.svg" alt="face" class="brightness-0	invert" >
+                    google+
+                  </a>
+                  <a href="#" class="w-[148px] lg:w-[130px] flex items-center gap-[10px] uppercase text-white bg-insta ring-1 ring-inset ring-insta py-[14px] px-[25px] lg:px-5 hover-over hover:text-insta hover:bg-white mb-5">
+                    <img src="img/instazam.svg" alt="face" class="brightness-0	invert" >
+                    instagram
+                  </a>
+                  <a href="#" class="w-[148px] lg:w-[130px] flex items-center gap-[10px] uppercase text-white bg-pint ring-1 ring-inset ring-pint py-[14px] px-[25px] lg:px-5 hover-over hover:text-pint hover:bg-white">
+                    <img src="img/pinterest.svg" alt="face" class="brightness-0	invert" >
+                    pinterest
+                  </a>
+                  <a href="#" class="w-[148px] lg:w-[130px] flex items-center gap-[10px] uppercase text-white bg-linked ring-1 ring-inset ring-linked py-[14px] px-[25px] lg:px-5 hover-over hover:text-linked hover:bg-white">
+                    <img src="img/linkedin.svg" alt="face" class="brightness-0	invert" >
+                    linkedin
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="flex items-center justify-center">
+          <img src="img/ad.jpg" alt="ad">
+        </div>
+      </section>
 
-      <div class="grid grid-cols-4 gap-x-[30px] mb-[50px]">
-        <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px]">
-         <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center">9 Things to Consider Before Accepting a New Job</p>
-         <img src="img/picks.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
+      <section class="container mx-auto max-w-[1218px] lg:max-w-[945px] mb-12">
+        <div class="flex items-center justify-between py-8 border-[3px] border-t-borderbg border-solid">
+          <h2 class="uppercase mbold text-[21px] tracking-custom">editors picks</h2>
+          <div class="flex items-center gap-[5px]">
+            <div class="flex items-center justify-center rounded-[5px] bg-white py-2 px-[11px] cursor-pointer">
+              <img src="img/leftarrow.svg" alt="arrow">
+            </div>
+            <div class="flex items-center justify-center rounded-[5px] bg-white py-2 px-[11px] cursor-pointer">
+              <img src="img/rightarrow.svg" alt="arrow">
+            </div>
+          </div>
         </div>
-        <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px]">
-         <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center">Gov’t Toughens Rules to Ensure 3rd Telco Player Doesn’t Slack Off</p>
-         <img src="img/picks-2.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
-        </div>
-        <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px]">
-         <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center">(Infographic) Is Work-Life Balance Even Possible?</p>
-         <img src="img/picks.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
-        </div>
-        <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px]">
-          <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center">Is Uber Considering To Sell its Southeast Asia Business to Grab?</p>
+
+        <div class="grid grid-cols-4 gap-x-[30px] lg:gap-x-5 mb-[50px]">
+          <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px] lg:px-4 lg:pb-4 ">
+          <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center lg:line-clamp-2">9 Things to Consider Before Accepting a New Job</p>
+          <img src="img/picks.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
+          </div>
+          <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px] lg:px-4 lg:pb-4 ">
+          <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center lg:line-clamp-2">Gov’t Toughens Rules to Ensure 3rd Telco Player Doesn’t Slack Off</p>
           <img src="img/picks-2.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
-         </div>
-      </div>
+          </div>
+          <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px] lg:px-4 lg:pb-4 ">
+          <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center lg:line-clamp-2">(Infographic) Is Work-Life Balance Even Possible?</p>
+          <img src="img/picks.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
+          </div>
+          <div class="relative rounded-[5px] overflow-hidden h-full px-[23px] pt-[127px] lg:px-4 lg:pb-4 ">
+            <p class="msemibold text-[15px] tracking-necustom  leading-mycustom text-white relative z-10 text-center lg:line-clamp-2">Is Uber Considering To Sell its Southeast Asia Business to Grab?</p>
+            <img src="img/picks-2.jpg" alt="picks" class="absolute left-0 top-0  w-full h-full object-cover">
+          </div>
+        </div>
 
-      <div class="grid grid-cols-2 gap-x-[25px] gap-y-12 mb-12">
+        <div class="grid grid-cols-2 gap-x-[25px] gap-y-12 lg:gap-x-5 lg:gap-y-8 mb-12">
+          <div class="pt-8 border-[3px] border-t-borderbg border-solid">
+            <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">technology</h2>
+            <div class="flex items-center gap-[30px] lg:gap-5">
+              <div class="text-white rounded-[5px] overflow-hidden relative px-[23px] pt-[175px] pb-[27px] lg:pt-[130px]  w-1/2">
+                <h2 class="msemibold text-lg tracking-necustom line-clamp-3 leading-mycustom pb-7 relative z-10 ">Google is Looking for PH's Best Ads on YouTube</h2>
+                <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
+                <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
+              </div>
+              <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2 ">
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2">Need a Website for Your Business? Google Can Help</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">Here Are Ways You Can Earn From the Sharing Economy</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">19 Crazy Facts You Probably Didn't Know About Google</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">What Household Chores Would Filipinos Love to Assign to Robots?</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-8 border-[3px] border-t-borderbg border-solid">
+            <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">travel</h2>
+            <div class="flex items-center gap-[30px] lg:gap-5">
+              <div class="text-white rounded-[5px] overflow-hidden relative px-5 pt-[175px] pb-[27px] lg:pt-[130px]  w-1/2">
+                <h2 class="msemibold text-lg tracking-necustom line-clamp-3 leading-mycustom pb-7 relative z-10">4 credit card tips to make business travel easier, confortable</h2>
+                <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
+                <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
+              </div>
+              <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2">
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2">5 deadliest luxury vacation spots on Earth</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">These 4 startups can send you to work and travel abroad</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">9 mind-blowing travel destinations for adventure seekers</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">These Small Business Ideas Are Great for Entrepreneurial Children</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-8 border-[3px] border-t-borderbg border-solid">
+            <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">reviews</h2>
+            <div class="flex items-center gap-[30px] lg:gap-5">
+              <div class="text-white rounded-[5px] overflow-hidden relative px-[23px] pt-[175px] pb-[27px]  lg:pt-[130px] w-1/2 ">
+                <h2 class="msemibold text-lg tracking-necustom line-clamp-3 leading-mycustom pb-7 relative z-10">UN’s WFP Building Up Blockchain-Based  Payments System</h2>
+                <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
+                <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
+              </div>
+              <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2">
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2 before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder line-clamp-2">Cryptocurrency Markets: Weekly Trading Overview (06-13 October)</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2 before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder line-clamp-2">MyEtherWallet Opens the Ethereum Universe for You</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2 before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder line-clamp-2">Put Your Money Where Your Marketing Is</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2 before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder line-clamp-2">3 ways for startups to master the art of emailing</li>
+              </ul>            
+            </div>
+          </div>
+          <div class="pt-8 border-[3px] border-t-borderbg border-solid">
+            <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">investments</h2>
+            <div class="flex items-center gap-[30px] lg:gap-5">
+              <div class="text-white rounded-[5px] overflow-hidden relative px-5 pt-[175px] pb-[27px] lg:pt-[130px]  w-1/2">
+                <h2 class="msemibold text-lg tracking-necustom line-clamp-3 leading-mycustom pb-7 relative z-10">14 easy, low-cost ways authors can promote their books</h2>
+                <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
+                <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
+              </div>
+              <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2">
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2">Financial Adviser: 4 ways to know how much dividends you should pay</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">3 cash flow rules first-time business owners need to know</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">Common credit mistakes new business owners make</li>
+                <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder lg:line-clamp-2 ">Ask these 2 questions every time you make a purchase</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+
         <div class="pt-8 border-[3px] border-t-borderbg border-solid">
-          <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">technology</h2>
-          <div class="flex items-center gap-[30px]">
-            <div class="text-white rounded-[5px] overflow-hidden relative px-[23px] pt-[175px] pb-[27px] w-1/2">
-              <h2 class="msemibold text-lg tracking-necustom leading-mycustom pb-7 relative z-10 ">Google is Looking for PH's Best Ads on YouTube</h2>
-              <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
-              <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
-            </div>
-            <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2 ">
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">Need a Website for Your Business? Google Can Help</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">Here Are Ways You Can Earn From the Sharing Economy</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">19 Crazy Facts You Probably Didn't Know About Google</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">What Household Chores Would Filipinos Love to Assign to Robots?</li>
-            </ul>
-          </div>
-        </div>
-        <div class="pt-8 border-[3px] border-t-borderbg border-solid">
-          <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">travel</h2>
-          <div class="flex items-center gap-[30px]">
-            <div class="text-white rounded-[5px] overflow-hidden relative px-5 pt-[175px] pb-[27px] w-1/2">
-              <h2 class="msemibold text-lg tracking-necustom leading-mycustom pb-7 relative z-10">4 credit card tips to make business travel easier, confortable</h2>
-              <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
-              <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
-            </div>
-            <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2">
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">5 deadliest luxury vacation spots on Earth</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">These 4 startups can send you to work and travel abroad</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">9 mind-blowing travel destinations for adventure seekers</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">These Small Business Ideas Are Great for Entrepreneurial Children</li>
-            </ul>
-          </div>
-        </div>
-        <div class="pt-8 border-[3px] border-t-borderbg border-solid">
-          <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">reviews</h2>
-          <div class="flex items-center gap-[30px]">
-            <div class="text-white rounded-[5px] overflow-hidden relative px-[23px] pt-[175px] pb-[27px] w-1/2 ">
-              <h2 class="msemibold text-lg tracking-necustom leading-mycustom pb-7 relative z-10">UN’s WFP Building Up Blockchain-Based  Payments System</h2>
-              <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
-              <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
-            </div>
-            <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2">
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">Cryptocurrency Markets: Weekly Trading Overview (06-13 October)</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">MyEtherWallet Opens the Ethereum Universe for You</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">Put Your Money Where Your Marketing Is</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">3 ways for startups to master the art of emailing</li>
-            </ul>
-          </div>
-        </div>
-        <div class="pt-8 border-[3px] border-t-borderbg border-solid">
-          <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">investments</h2>
-          <div class="flex items-center gap-[30px]">
-            <div class="text-white rounded-[5px] overflow-hidden relative px-5 pt-[175px] pb-[27px] w-1/2">
-              <h2 class="msemibold text-lg tracking-necustom leading-mycustom pb-7 relative z-10">14 easy, low-cost ways authors can promote their books</h2>
-              <p class="sbold text-xs relative z-10">by Deothemes - Jan. 21, 2018</p>
-              <img src="img/technolog.jpg" alt="section-activities"  class="absolute left-0 top-0 h-full w-full">
-            </div>
-            <ul class="flex flex-col gap-6 text-[13px] msemibold leading-mycustom tracking-necustom w-1/2">
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder">Financial Adviser: 4 ways to know how much dividends you should pay</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">3 cash flow rules first-time business owners need to know</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">Common credit mistakes new business owners make</li>
-              <li class="relative pl-[13px] before:absolute before:left-0 before:top-[10px] before:-translate-y-1/2  before:bg-[url('img/arrow_blue.svg')] before:bg-center before:bg-no-repeat before:bg-cover before:h-4 before:w-[6px] pb-[20px] border-b border-solid border-liborder ">Ask these 2 questions every time you make a purchase</li>
-            </ul>
-          </div>
-        </div>
-        
-      </div>
+          <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">videos</h2>
 
-      <div class="pt-8 border-[3px] border-t-borderbg border-solid">
-        <h2 class="uppercase mbold text-[21px] tracking-custom mb-8">videos</h2>
+          <div class="grid grid-cols-2 gap-x-[30px]">
+            <div class="flex flex-col">
+                <div class="h-full w-full relative">
+                  <img src="img/img_video_1.jpg" alt="video" class="block">
+                  <button class="py-2 px-[9px] rounded-[5px] bg-cblue flex items-center gap-[6px] sbold text-[15px]  bottom-8 left-8 text-white z-10 absolute left-[32px] bottom-[32px] cursor-pointer">
+                    <img src="img/play.svg" alt="play-btn">
+                    3:21
+                  </button>
+                </div>
+              <div class="pt-6">
+                <div>
+                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">What Days and Hours are PH Online Shoppers Most Likely to Buy?</a>
+                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                </div>
+                <div class="leading-linecustom tetx-cgray mt-6">
+                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                </div>
+              </div>
 
-        <div class="grid grid-cols-2 gap-x-[30px]">
-          <div class="flex flex-col">
-              <div class="h-full w-full relative">
-                <img src="img/img_video_1.jpg" alt="video" class="block">
-                <button class="py-2 px-[9px] rounded-[5px] bg-cblue flex items-center gap-[6px] sbold text-[15px]  bottom-8 left-8 text-white z-10 absolute left-[32px] bottom-[32px] cursor-pointer">
-                  <img src="img/play.svg" alt="play-btn">
-                  3:21
-                </button>
-              </div>
-            <div class="pt-6">
-              <div>
-                <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">What Days and Hours are PH Online Shoppers Most Likely to Buy?</a>
-                <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-              </div>
-              <div class="leading-linecustom tetx-cgray mt-6">
-                iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-              </div>
             </div>
+            <div class="flex flex-col">
+                <div class="h-full w-full relative">
+                  <img src="img/img_video_1.jpg" alt="video" class="block">
+                  <button class="py-2 px-[9px] rounded-[5px] bg-greenbtn flex items-center gap-[6px] sbold text-[15px]  bottom-8 left-8 text-white z-10 absolute left-[32px] bottom-[32px] cursor-pointer">
+                    <img src="img/play.svg" alt="play-btn">
+                    6:04
+                  </button>
+                </div>
+              <div class="pt-6">
+                <div>
+                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">What Days and Hours are PH Online Shoppers Most Likely to Buy?</a>
+                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                </div>
+                <div class="leading-linecustom tetx-cgray mt-6">
+                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                </div>
+              </div>
 
-          </div>
-          <div class="flex flex-col">
-              <div class="h-full w-full relative">
-                <img src="img/img_video_1.jpg" alt="video" class="block">
-                <button class="py-2 px-[9px] rounded-[5px] bg-greenbtn flex items-center gap-[6px] sbold text-[15px]  bottom-8 left-8 text-white z-10 absolute left-[32px] bottom-[32px] cursor-pointer">
-                  <img src="img/play.svg" alt="play-btn">
-                  6:04
-                </button>
-              </div>
-            <div class="pt-6">
-              <div>
-                <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">What Days and Hours are PH Online Shoppers Most Likely to Buy?</a>
-                <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-              </div>
-              <div class="leading-linecustom tetx-cgray mt-6">
-                iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-              </div>
             </div>
-
           </div>
+
         </div>
 
-      </div>
 
 
 
 
+      </section>
 
-    </section>
-
-    <section class="container-c">
-      <div class="flex flex-wrap -ml-[15px] -mr-[15px] mb-12">
-        <div class="basis-2/3 p-[15px]">    
-          <div class="py-8 border-[3px] border-t-borderbg border-solid">
-            <h2 class="uppercase mbold text-[21px] tracking-custom ">worldwide</h2>
-          </div>
-          <div class="flex flex-col gap-[30px]">
-            <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <a href="#" class="relative block w-1/2">
-                <img src="img/average-img.jpg" alt="average" class="w-full">
-                <button class="text-white bg-lightbluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">business</button>
-              </a>
-              <div class="pt-6 px-8 pb-8 w-1/2">
-                <div>
-                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">How Crown Asia Chemicals grew from startup to listed company</a>
-                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                </div>
-                <div class="leading-linecustom tetx-cgray mt-6">
-                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-                </div>
-              </div>
+      <section class="container mx-auto max-w-[1218px] lg:max-w-[945px]">
+        <div class="flex flex-wrap -ml-[15px] -mr-[15px] mb-12">
+          <div class="basis-2/3 p-[15px]">    
+            <div class="py-8 border-[3px] border-t-borderbg border-solid">
+              <h2 class="uppercase mbold text-[21px] tracking-custom ">worldwide</h2>
             </div>
-            <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <a href="#" class="relative block w-1/2">
-                <img src="img/average-img.jpg" alt="average" class="w-full">
-                <button class="text-white bg-violetbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">fashion</button>
-              </a>
-              <div class="pt-6 px-8 pb-8 w-1/2">
-                <div>
-                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">This Co-Working Space is a One-Stop Shop</a>
-                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                </div>
-                <div class="leading-linecustom tetx-cgray mt-6">
-                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <a href="#" class="relative block w-1/2">
-                <img src="img/average-img.jpg" alt="average" class="w-full">
-                <button class="text-white bg-corange rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">business</button>
-              </a>
-              <div class="pt-6 px-8 pb-8 w-1/2">
-                <div>
-                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">This 6-Year-Old Kid Reportedly Earned US$11 Million on YouTube</a>
-                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                </div>
-                <div class="leading-linecustom tetx-cgray mt-6">
-                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <a href="#" class="relative block w-1/2">
-                <img src="img/average-img.jpg" alt="average" class="w-full">
-                <button class="text-white bg-bluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">world</button>
-              </a>
-              <div class="pt-6 px-8 pb-8 w-1/2">
-                <div>
-                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">Rating Agency Breaks with Financial Community </a>
-                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                </div>
-                <div class="leading-linecustom tetx-cgray mt-6">
-                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <a href="#" class="relative block w-1/2">
-                <img src="img/average-img.jpg" alt="average" class="w-full">
-                <button class="text-white bg-greenbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">lifestyle</button>
-              </a>
-              <div class="pt-6 px-8 pb-8 w-1/2">
-                <div>
-                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">Decentralized Exchanges (DEX) – What Are They?</a>
-                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                </div>
-                <div class="leading-linecustom tetx-cgray mt-6">
-                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <a href="#" class="relative block w-1/2">
-                <img src="img/average-img.jpg" alt="average" class="w-full">
-                <button class="text-white bg-clifford rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">lifestyle</button>
-              </a>
-              <div class="pt-6 px-8 pb-8 w-1/2">
-                <div>
-                  <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">The Car Insurance Catch that can Double Your Cover in Two Months</a>
-                  <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                </div>
-                <div class="leading-linecustom tetx-cgray mt-6">
-                  iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-center">
-              <div class="flex items-center gap-[7px]">
-                <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-lightbluebtn text-white w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">1</a>
-                <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-white text-cgray w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">2</a>
-                <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-white text-cgray w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">3</a>
-                <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-white text-cgray w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">4</a>
-                <a href="#" class="py-[6px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white w-[30px] h-[32px] px-[11px] rounded-[5px] bg-white text-cgray hover-svg">
-                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.36384 4.65179C5.42336 4.71131 5.45312 4.77976 5.45312 4.85714C5.45312 4.93452 5.42336 5.00298 5.36384 5.0625L1.20312 9.22321C1.1436 9.28274 1.07515 9.3125 0.997768 9.3125C0.920387 9.3125 0.851935 9.28274 0.792411 9.22321L0.345982 8.77679C0.286458 8.71726 0.256696 8.64881 0.256696 8.57143C0.256696 8.49405 0.286458 8.4256 0.345982 8.36607L3.85491 4.85714L0.345982 1.34821C0.286458 1.28869 0.256696 1.22024 0.256696 1.14286C0.256696 1.06548 0.286458 0.997024 0.345982 0.9375L0.792411 0.491072C0.851935 0.431547 0.920387 0.401786 0.997768 0.401786C1.07515 0.401786 1.1436 0.431547 1.20312 0.491072L5.36384 4.65179Z" fill="#54555E"/>
-                    </svg>
+            <div class="flex flex-col gap-[30px] lg:5">
+              <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <a href="#" class="relative block w-1/2">
+                  <img src="img/average-img.jpg" alt="average" class="w-full">
+                  <button class="text-white bg-lightbluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">business</button>
                 </a>
+                <div class="pt-6 px-8 pb-8 w-1/2 lg:pt-3 lg:px-6 lg:pb-5">
+                  <div>
+                    <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">How Crown Asia Chemicals grew from startup to listed company</a>
+                    <a href="#" class="mt-[17px] lg:mt-[10px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                  </div>
+                  <div class="leading-linecustom tetx-cgray mt-6 lg:mt-5 lg:line-clamp-2">
+                    iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                  </div>
+                </div>
               </div>
+              <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <a href="#" class="relative block w-1/2">
+                  <img src="img/average-img.jpg" alt="average" class="w-full">
+                  <button class="text-white bg-violetbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">fashion</button>
+                </a>
+                <div class="pt-6 px-8 pb-8 w-1/2 lg:pt-3 lg:px-6 lg:pb-5">
+                  <div>
+                    <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">This Co-Working Space is a One-Stop Shop</a>
+                    <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                  </div>
+                  <div class="leading-linecustom tetx-cgray mt-6 lg:mt-5 lg:line-clamp-2">
+                    iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <a href="#" class="relative block w-1/2">
+                  <img src="img/average-img.jpg" alt="average" class="w-full">
+                  <button class="text-white bg-corange rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">business</button>
+                </a>
+                <div class="pt-6 px-8 pb-8 w-1/2 lg:pt-3 lg:px-6 lg:pb-5">
+                  <div>
+                    <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">This 6-Year-Old Kid Reportedly Earned US$11 Million on YouTube</a>
+                    <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                  </div>
+                  <div class="leading-linecustom tetx-cgray mt-6 lg:mt-5 lg:line-clamp-2">
+                    iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <a href="#" class="relative block w-1/2">
+                  <img src="img/average-img.jpg" alt="average" class="w-full">
+                  <button class="text-white bg-bluebtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">world</button>
+                </a>
+                <div class="pt-6 px-8 pb-8 w-1/2 lg:pt-3 lg:px-6 lg:pb-5">
+                  <div>
+                    <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">Rating Agency Breaks with Financial Community </a>
+                    <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                  </div>
+                  <div class="leading-linecustom tetx-cgray mt-6 lg:mt-5 lg:line-clamp-2">
+                    iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <a href="#" class="relative block w-1/2">
+                  <img src="img/average-img.jpg" alt="average" class="w-full">
+                  <button class="text-white bg-greenbtn rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">lifestyle</button>
+                </a>
+                <div class="pt-6 px-8 pb-8 w-1/2 lg:pt-3 lg:px-6 lg:pb-5">
+                  <div>
+                    <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">Decentralized Exchanges (DEX) – What Are They?</a>
+                    <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                  </div>
+                  <div class="leading-linecustom tetx-cgray mt-6 lg:mt-5 lg:line-clamp-2">
+                    iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center rounded-[5px] overflow-hidden bg-white drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <a href="#" class="relative block w-1/2">
+                  <img src="img/average-img.jpg" alt="average" class="w-full">
+                  <button class="text-white bg-clifford rounded-[5px] px-[11px] py-[7px] absolute bottom-4 cursor-pointer left-4 mbold text-[10px]">lifestyle</button>
+                </a>
+                <div class="pt-6 px-8 pb-8 w-1/2 lg:pt-3 lg:px-6 lg:pb-5">
+                  <div>
+                    <a href="#" class="msemibold  text-[21px] leading-mycustom tracking-necustom line-clamp-2">The Car Insurance Catch that can Double Your Cover in Two Months</a>
+                    <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                  </div>
+                  <div class="leading-linecustom tetx-cgray mt-6 lg:mt-5 lg:line-clamp-2">
+                    iPrice Group report offers insights on daily e-commerce activity in the Philippines and Southeast...
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <div class="flex items-center gap-[7px]">
+                  <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-lightbluebtn text-white w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">1</a>
+                  <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-white text-cgray w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">2</a>
+                  <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-white text-cgray w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">3</a>
+                  <a href="#" class="py-[6px] px-[11px] rounded-[5px] bg-white text-cgray w-[30px] h-[32px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white">4</a>
+                  <a href="#" class="py-[6px] flex items-center justify-center hover:bg-lightbluebtn hover:text-white w-[30px] h-[32px] px-[11px] rounded-[5px] bg-white text-cgray hover-svg">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.36384 4.65179C5.42336 4.71131 5.45312 4.77976 5.45312 4.85714C5.45312 4.93452 5.42336 5.00298 5.36384 5.0625L1.20312 9.22321C1.1436 9.28274 1.07515 9.3125 0.997768 9.3125C0.920387 9.3125 0.851935 9.28274 0.792411 9.22321L0.345982 8.77679C0.286458 8.71726 0.256696 8.64881 0.256696 8.57143C0.256696 8.49405 0.286458 8.4256 0.345982 8.36607L3.85491 4.85714L0.345982 1.34821C0.286458 1.28869 0.256696 1.22024 0.256696 1.14286C0.256696 1.06548 0.286458 0.997024 0.345982 0.9375L0.792411 0.491072C0.851935 0.431547 0.920387 0.401786 0.997768 0.401786C1.07515 0.401786 1.1436 0.431547 1.20312 0.491072L5.36384 4.65179Z" fill="#54555E"/>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basis-1/3 p-[15px] flex-1">
+            <div class="flex flex-col gap-10 lg:gap-[30px]">
+              <div class="relative rounded-[5px] overflow-hidden pl-[25px] pt-[45px] pb-6 lg:pt-9 lg:pb-4">
+                <div class="mmedium text-lg leading-mycustom tracking-necustom uppercase relative z-10 text-white">
+                  <div class="mb-[17px] lg:mb-2 mbold tezxt-[28px] capitalize">CenTre</div>
+                  most advanced magazine and news
+                </div>
+                <button class="cursor-pointer bg-cblue rounded-[5px] text-white py-[14px] px-[28.32px] lg:py-[9px] lg:px-[25px] uppercase relative z-10 mt-[70px] lg:mt-[50px] sbold">buy now</button>
+                <img src="img/phone.jpg" alt="phone" class="absolute top-0 left-0 w-full">
+              </div>
+
+              <div class="bg-white py-8 px-6 lg:py-6 lg:px-4 rounded-[5px] drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
+                <div class="uppercase mbold tracking-custom mb-7">
+                  categories
+                </div>
+
+                <div class="flex flex-col gap-5">
+                  <div class="flex items-center justify-between">
+                    <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">world</div>
+                    <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">5</button>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">lifestyle</div>
+                    <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">6</button>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Business</div>
+                    <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">15</button>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Fashion</div>
+                    <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">10</button>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Investment</div>
+                    <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">12</button>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Technology</div>
+                    <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">7</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-[5px] drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)] py-8 px-6 lg:py-6 lg:px-4">
+                <div class="uppercase mbold tracking-custom mb-7">
+                  recommended
+                </div>
+
+                <div class="flex flex-col gap-[30px]">
+                  <div class="flex flex-col">
+                    <img src="img/small.jpg" alt="small">
+                    <div class="pt-6">
+                      <div>
+                        <a href="#" class="msemibold  text-[15px] leading-mycustom tracking-necustom line-clamp-2">UN’s WFP Building Up Blockchain-Based Payments System</a>
+                        <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                      </div>
+                      <div class="flex items-center gap-[5px] mt-4">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <img src="img/small.jpg" alt="small">
+                    <div class="pt-6">
+                      <div>
+                        <a href="#" class="msemibold  text-[15px] leading-mycustom tracking-necustom line-clamp-2">4 credit card tips to make business travel easier</a>
+                        <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
+                      </div>
+                      <div class="flex items-center gap-[5px] mt-4">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                        <img src="img/rating.svg" alt="start">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="basis-1/3 p-[15px] flex-1">
-          <div class="flex flex-col gap-10">
-            <div class="relative rounded-[5px] overflow-hidden pl-[25px] pt-[45px] pb-6">
-              <div class="mmedium text-lg leading-mycustom tracking-necustom uppercase relative z-10 text-white">
-                <div class="mb-[17px] mbold tezxt-[28px] capitalize">CenTre</div>
-                most advanced magazine and news
-              </div>
-              <button class="cursor-pointer bg-cblue rounded-[5px] text-white py-[14px] px-[28.32px] uppercase relative z-10 mt-[70px] sbold">buy now</button>
-              <img src="img/phone.jpg" alt="phone" class="absolute top-0 left-0 w-full">
-            </div>
+      </section>
 
-            <div class="bg-white py-8 px-6 rounded-[5px] drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)]">
-              <div class="uppercase mbold tracking-custom mb-7">
-                categories
-              </div>
+  <footer class="bg-cblack pt-[70px] pb-[64px]">
+    <div class="container mx-auto max-w-[1218px] lg:max-w-[945px]">
+      <div class="flex items-center">
 
-              <div class="flex flex-col gap-5">
-                <div class="flex items-center justify-between">
-                  <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">world</div>
-                  <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">5</button>
-                </div>
-                <div class="flex items-center justify-between">
-                  <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">lifestyle</div>
-                  <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">6</button>
-                </div>
-                <div class="flex items-center justify-between">
-                  <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Business</div>
-                  <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">15</button>
-                </div>
-                <div class="flex items-center justify-between">
-                  <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Fashion</div>
-                  <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">10</button>
-                </div>
-                <div class="flex items-center justify-between">
-                  <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Investment</div>
-                  <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">12</button>
-                </div>
-                <div class="flex items-center justify-between">
-                  <div class="text-cgray capitalize relative pl-[14px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bottom-0 before:w-[6px] before:bg-[url('img/arrow_blue.svg')]  before:bg-no-repeat before:bg-center before:bg-contain">Technology</div>
-                  <button class="w-[30px] h-8 rounded-[5px] flex items-center justify-center bg-categ text-sm">7</button>
-                </div>
-              </div>
-            </div>
+        <div class="flex flex-col gap-7 mr-[83px] lg:mr-[150px]">
+          <h2 class="mbold text-white text-[28px]">Deus</h2>
 
-            <div class="bg-white rounded-[5px] drop-shadow-[0_2px_3px_rgba(0, 0, 0, 0.1)] py-8 px-6">
-              <div class="uppercase mbold tracking-custom mb-7">
-                recommended
-              </div>
-
-              <div class="flex flex-col gap-[30px]">
-                <div class="flex flex-col">
-                  <img src="img/small.jpg" alt="small">
-                  <div class="pt-6">
-                    <div>
-                      <a href="#" class="msemibold  text-[15px] leading-mycustom tracking-necustom line-clamp-2">UN’s WFP Building Up Blockchain-Based Payments System</a>
-                      <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                    </div>
-                    <div class="flex items-center gap-[5px] mt-4">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col">
-                  <img src="img/small.jpg" alt="small">
-                  <div class="pt-6">
-                    <div>
-                      <a href="#" class="msemibold  text-[15px] leading-mycustom tracking-necustom line-clamp-2">4 credit card tips to make business travel easier</a>
-                      <a href="#" class="mt-[17px] ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</a>
-                    </div>
-                    <div class="flex items-center gap-[5px] mt-4">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                      <img src="img/rating.svg" alt="start">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div class="flex items-center text-[15px] text-cgrey">
+            <span class="relative block pr-[5px] after:absolute after:right-0 after:top-1/2 after:h-4 after:w-[1px] after:bg-cgrey after:-translate-y-1/2">© 2018 centre</span>
+            <span class="pl-[5px]">Made by DeoThemes.</span>
           </div>
+
+          <div class="flex items-center gap-[7px]">
+            <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-facebook">
+              <img src="img/acebook.svg" class="brightness-0	invert" alt="facebook">
+            </a>
+            <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-twit">
+              <img src="img/twitter-1.svg" class="brightness-0	invert" alt="twitter">
+            </a>
+            <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-google">
+              <img src="img/google-.svg" class="brightness-0	invert" alt="google">
+            </a>
+            <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-insta">
+              <img src="img/instazam.svg" class="brightness-0	invert" alt="instazam">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="flex flex-col text-white gap-6 uppercase mmedium text-sm tracking-custom mr-[90px] lg:mr-0">
+          useful links
+
+          <ul class="flex flex-col gap-[10px] capitalize leading-newone">
+            <li>About</li>
+            <li>News</li>
+            <li>Advertise</li>
+            <li>Support</li>
+            <li>Features</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="lg:hidden  flex flex-col gap-8 text-white w-[330px]">
+            <div class="flex items-center gap-4">
+                <div class="size-[88px] rounded-full  overflow-hidden ">
+                  <img src="img/post01.jpg" alt="post01" class="w-full h-full">
+                </div>
+                <a href="#" class="w-1/2">
+                  <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Follow These Smartphone Habits of Successful Entrepreneurs</h2>
+                  <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class=" size-[88px] rounded-full overflow-hidden ">
+                  <img src="img/premium_2.avif" alt="post02" class="h-full w-full object-cover">
+                </div>
+                <a href="#" class="w-1/2">
+                  <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2 ">Is Uber Considering To Sell its Southeast Asia Business to Grab?</h2>
+                  <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col ml-auto">
+          <h2 class="uppercase mmedium text-sm text-white tracking-custom mb-[26px]">newsletter</h2>
+          <form class="flex flex-col gap-5">
+            <div class="flex items-center gap-2 text-cgrey">
+              <img src="img/letter.svg" alt="letter">
+              Subscribe for our daily news
+            </div>
+            <div class="flex items-center justify-between rounded-[5px] overflow-hidden">
+            <input type="text" id="type" class="focus:outline-0 bg-white ring-1 ring-rings ring-inset py-[14px] px-[15px] text-cgrey w-[258px] lg:w-[211px]">
+            <label for="type" class="text-white bg-cblue py-4 px-[17px] lg:px-[10px]  sbold text-sm ring-1 ring-inset ring-cblue cursor-pointer">Sign up</label>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-
-    <footer class="bg-cblack pt-[70px] pb-[64px]">
-      <div class="container-c">
-        <div class="flex items-center">
-
-          <div class="flex flex-col gap-7 mr-[83px]">
-            <h2 class="mbold text-white text-[28px]">Deus</h2>
-
-            <div class="flex items-center text-[15px] text-cgrey">
-              <span class="relative block pr-[5px] after:absolute after:right-0 after:top-1/2 after:h-4 after:w-[1px] after:bg-cgrey after:-translate-y-1/2">© 2018 centre</span>
-              <span class="pl-[5px]">Made by DeoThemes.</span>
-            </div>
-
-            <div class="flex items-center gap-[7px]">
-              <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-facebook">
-                <img src="img/acebook.svg" class="brightness-0	invert" alt="facebook">
-              </a>
-              <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-twit">
-                <img src="img/twitter-1.svg" class="brightness-0	invert" alt="twitter">
-              </a>
-              <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-google">
-                <img src="img/google-.svg" class="brightness-0	invert" alt="google">
-              </a>
-              <a href="#" class="size-[46px] rounded-full flex items-center justify-center bg-insta">
-                <img src="img/instazam.svg" class="brightness-0	invert" alt="instazam">
-              </a>
-            </div>
-
-          </div>
-
-          <div class="flex flex-col text-white gap-6 uppercase mmedium text-sm tracking-custom mr-[90px]">
-            useful links
-
-            <ul class="flex flex-col gap-[10px] capitalize leading-newone">
-              <li>About</li>
-              <li>News</li>
-              <li>Advertise</li>
-              <li>Support</li>
-              <li>Features</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          <div class="flex flex-col gap-8 text-white w-[330px]">
-              <div class="flex items-center gap-4">
-                  <div class="size-[88px] rounded-full  overflow-hidden ">
-                    <img src="img/post01.jpg" alt="post01" class="w-full h-full">
-                  </div>
-                  <a href="#" class="w-1/2">
-                    <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2">Follow These Smartphone Habits of Successful Entrepreneurs</h2>
-                    <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                  </a>
-              </div>
-              <div class="flex items-center gap-4">
-                  <div class=" size-[88px] rounded-full overflow-hidden ">
-                    <img src="img/premium_2.avif" alt="post02" class="h-full w-full object-cover">
-                  </div>
-                  <a href="#" class="w-1/2">
-                    <h2 class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2 ">Is Uber Considering To Sell its Southeast Asia Business to Grab?</h2>
-                    <p class="mt-3 ssemibold text-cgrey text-xs">by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018</p>
-                  </a>
-              </div>
-          </div>
-
-
-          <div class="flex flex-col ml-auto">
-            <h2 class="uppercase mmedium text-sm text-white tracking-custom mb-[26px]">newsletter</h2>
-            <form class="flex flex-col gap-5">
-              <div class="flex items-center gap-2 text-cgrey">
-                <img src="img/letter.svg" alt="letter">
-                Subscribe for our daily news
-              </div>
-             <div class="flex items-center justify-between rounded-[5px] overflow-hidden">
-              <input type="text" id="type" class="focus:outline-0 bg-white ring-1 ring-rings ring-inset py-[14px] px-[15px] text-cgrey w-[258px]">
-              <label for="type" class="text-white bg-cblue py-4 px-[17px] sbold text-sm ring-1 ring-inset ring-cblue cursor-pointer">Sign up</label>
-             </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
     
 
 </body>

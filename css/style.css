@@ -1,10 +1,3 @@
-.container-c{
-    max-width: 1218px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @font-face {
     font-family: 'mbold';
     src: url('../fonts/Montserrat-Bold.ttf')
