@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deus |</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            "2xl": { max: "1535px" },
+            // => @media (max-width: 1535px) { ... }
+
+            xl: { max: "1279px" },
+            // => @media (max-width: 1279px) { ... }
+
+            lg: { max: "1024px" },
+            // => @media (max-width: 1023px) { ... }
+
+            md: { max: "767px" },
+            // => @media (max-width: 767px) { ... }
+
+            sm: { max: "639px" },
+            // => @media (max-width: 639px) { ... }
+          },
+          extend: {
+            lineHeight: {
+              mycustom: "146.3%",
+              linecustom: "150.8%",
+              newone: "163.4%",
+            },
+            letterSpacing: {
+              custom: "5%",
+              necustom: "-5%",
+            },
+            colors: {
+              clifford: "#00BCD4",
+              cblack: "#171821",
+              bgcolor: "#E5E5E5",
+              cgray: "#54555E",
+              cblue: "#2D95E3",
+              graystick: "#E3E4E8",
+              cgrey: "#83858F",
+              bluebtn: "#3E3EDD",
+              violetbtn: "#7B1FA2",
+              lightbluebtn: "#0E79C9",
+              greenbtn: "#19C22A",
+              borderbg: "#888994",
+              corange: "#E65100",
+              rings: "#E3E4E8",
+              twit: "#55ACEE",
+              google: "#DE4B39",
+              facebook: "#36528C",
+              insta: "#C13282",
+              pint: "#BD081C",
+              linked: "#0077B5",
+              liborder: "#8B8D92",
+              categ: "#F2F3F5",
+              label: "#F7F7F7",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-bgcolor text-cblack tetx-base h-screen w-screen sregular">
+    <header class="bg-cblack py-[7px]">
+      <div class="container mx-auto max-w-[1218px] lg:max-w-[945px] flex items-center justify-between">
+        <div class="flex items-center gap-6 text-white text-sm capitalize">
+          <a href="news.html" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full ">News</a>
+          <a href="about.html" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">About</a>
+          <a href="advertise.html" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Advertise</a>
+          <a href="contact.html" class="relative block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:ease-in-out after:delay-100 hover:after:w-full">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#">
+            <img src="img/facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="img/twitter.svg" alt="twitter">
+          </a>
+          <a href="#">
+            <img src="img/ins.svg" alt="instazam">
+          </a>
+        </div>
+      </div>
+  </header>
+
+  <nav class="bg-white py-2  text-sm mb-6">
+    <div class="container mx-auto max-w-[1218px] lg:max-w-[945px] flex items-center">
+      <div class="flex items-center gap-8 mbold text-[28px] mr-[70px]">
+        <a href="#">
+          <img src="img/hamburger.svg" alt="hamburger">
+        </a>
+        <a href="index.html">
+          Deus
+        </a>
+    </div>
+      <div class="flex items-center gap-6 uppercase sbold">
+        <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">home</a>
+        <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">posts</a>
+        <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">pages</a>
+        <a href="#" class="relative pr-[15px] block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-[url('img/arrow.svg')] after:bg-center after:bg-no-repeat after:bg-contain after:w-[10px] after:h-4">features</a>
+        <a href="#">purchase</a>
+      </div>
+      <a href="#" class="ml-auto">
+        <img src="img/search_icon.svg" alt="search">
+      </a>
+    </div>
+  </nav>
+
+
+    <section class="container mx-auto max-w-[1218px] lg:max-w-[945px]">
+      <div class="pagination text-sm text-cgrey capitalize mb-[10px]">
+        <ul class="flex items-center">
+          <li
+            class="relative pr-[15px] after:absolute after:top-1/2 after:-translate-y-1/2 after:right-0 after:w-[10px] after:h-[10px] after:bg-[url('img/arrowgray.svg')] after:bg-center after:bg-cover after:bg-no-repeat"
+          >
+            home
+          </li>
+          <li
+            class="relative pr-[15px] after:absolute after:top-1/2 after:-translate-y-1/2 after:right-0 after:w-[10px] after:h-[10px] after:bg-[url('img/arrowgray.svg')] after:bg-center after:bg-cover after:bg-no-repeat pl-[5px]"
+          >
+            Pages
+          </li>
+          <li class="pl-[5px]">About</li>
+        </ul>
+      </div>
+
+      <div class="flex flex-wrap -ml-[15px] -mr-[15px] mb-12">
+        <div class="basis-full p-[15px]">
+          <div class="flex flex-col gap-6">
+            <div class="msemibold text-[38px] capitalize tracking-necustom">
+              about
+            </div>
+            <div class="h-[490px]">
+              <img
+                src="img/Rectanglebig.jpg"
+                alt="rectanglebig"
+                class="h-full w-full"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center -ml-[15px] -mr-[15px]">
+            <div class="basis-8/12 p-[15px]">
+              <div
+                class="flex flex-col gap-10 text-cgray leading-linecustom items-center"
+              >
+                <p>
+                  iPrice Group report offers insights on daily e-commerce
+                  activity in the Philippines and Southeast. Statistically, you
+                  stand a better chance for success if you have some sort of
+                  strategic ask in almost everything that you do -- in-person,
+                  on the phone, over email, or on social media.
+                </p>
+                <p>
+                  Think about it: If you make one additional ask per day and
+                  convert at around 10 percent. Then you have three people each
+                  month providing you with benefits that you'd have missed
+                  otherwise It's essential to make sure that your ask relates to
+                  some direct path to what you want, whether it is revenue, a
+                  business relationship or anything else of prime importance to
+                  you.
+                </p>
+
+                <div class="text-cblack text-[32px]">
+                  “Dreams and dedication are <br />
+                  powerful combination.”
+                </div>
+
+                <p>
+                  This strategy uses the Ben Franklin Effect: When people do you
+                  a favor, they are more likely to do another. When you meet
+                  someone you yourself might be able to assist, ask for their
+                  help and, at the same time (e.g. in the same conversation)
+                  offer yours. And make a point to be of service even if others
+                  might not be able to help you immediately.
+                </p>
+
+                <p>
+                  The same goes for phone calls, emails or social media
+                  interactions. Being afraid to ask for what you want is a
+                  detriment to your success and prosperity. If you lack this
+                  skill, then you need to work on it! Asking for help is a form
+                  of radical humility, something that with practice will have
+                  amazing benefits for all involved.Use this study to your
+                  advantage! Don't just ask people for help -- ask specifically
+                  for what you,
+                </p>
+
+                <p>
+                  In order to attract what you want, you actually have to
+                  consciously and strategically think about what you want and
+                  focus in on it. Then, you need to take some sort of action
+                  using the same four strategies you use to ask for help in
+                  order to make it happen. You can't get what you want sitting
+                  around on your couch. You need to put yourself out there and
+                  stimulate interest in person, via email, by phone and through
+                  social media.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-cblack pt-[70px] pb-[64px]">
+      <div class="container mx-auto max-w-[1218px] lg:max-w-[945px]">
+        <div class="flex items-center">
+          <div class="flex flex-col gap-7 mr-[83px] lg:mr-[150px]">
+            <h2 class="mbold text-white text-[28px]">Deus</h2>
+
+            <div class="flex items-center text-[15px] text-cgrey">
+              <span
+                class="relative block pr-[5px] after:absolute after:right-0 after:top-1/2 after:h-4 after:w-[1px] after:bg-cgrey after:-translate-y-1/2"
+                >© 2018 centre</span
+              >
+              <span class="pl-[5px]">Made by DeoThemes.</span>
+            </div>
+
+            <div class="flex items-center gap-[7px]">
+              <a
+                href="#"
+                class="size-[46px] rounded-full flex items-center justify-center bg-facebook"
+              >
+                <img
+                  src="img/acebook.svg"
+                  class="brightness-0 invert"
+                  alt="facebook"
+                />
+              </a>
+              <a
+                href="#"
+                class="size-[46px] rounded-full flex items-center justify-center bg-twit"
+              >
+                <img
+                  src="img/twitter-1.svg"
+                  class="brightness-0 invert"
+                  alt="twitter"
+                />
+              </a>
+              <a
+                href="#"
+                class="size-[46px] rounded-full flex items-center justify-center bg-google"
+              >
+                <img
+                  src="img/google-.svg"
+                  class="brightness-0 invert"
+                  alt="google"
+                />
+              </a>
+              <a
+                href="#"
+                class="size-[46px] rounded-full flex items-center justify-center bg-insta"
+              >
+                <img
+                  src="img/instazam.svg"
+                  class="brightness-0 invert"
+                  alt="instazam"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col text-white gap-6 uppercase mmedium text-sm tracking-custom mr-[90px] lg:mr-0"
+          >
+            useful links
+
+            <ul class="flex flex-col gap-[10px] capitalize leading-newone">
+              <li>About</li>
+              <li>News</li>
+              <li>Advertise</li>
+              <li>Support</li>
+              <li>Features</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <div class="lg:hidden flex flex-col gap-8 text-white w-[330px]">
+            <div class="flex items-center gap-4">
+              <div class="size-[88px] rounded-full overflow-hidden">
+                <img src="img/post01.jpg" alt="post01" class="w-full h-full" />
+              </div>
+              <a href="#" class="w-1/2 flex-1">
+                <h2
+                  class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2"
+                >
+                  Follow These Smartphone Habits of Successful Entrepreneurs
+                </h2>
+                <p class="mt-3 ssemibold text-cgrey text-xs">
+                  by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="size-[88px] rounded-full overflow-hidden">
+                <img
+                  src="img/premium_2.avif"
+                  alt="post02"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <a href="#" class="w-1/2 flex-1">
+                <h2
+                  class="msemibold text-sm leading-mycustom tracking-necustom line-clamp-2"
+                >
+                  Is Uber Considering To Sell its Southeast Asia Business to
+                  Grab?
+                </h2>
+                <p class="mt-3 ssemibold text-cgrey text-xs">
+                  by <span class="text-cblue">Deothemes</span> - Jan. 21, 2018
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col ml-auto">
+            <h2
+              class="uppercase mmedium text-sm text-white tracking-custom mb-[26px]"
+            >
+              newsletter
+            </h2>
+            <form class="flex flex-col gap-5">
+              <div class="flex items-center gap-2 text-cgrey">
+                <img src="img/letter.svg" alt="letter" />
+                Subscribe for our daily news
+              </div>
+              <div
+                class="flex items-center justify-between rounded-[5px] overflow-hidden"
+              >
+                <input
+                  type="text"
+                  id="type"
+                  placeholder="Your Email"
+                  class="focus:outline-0 bg-white ring-1 ring-rings ring-inset py-[14px] px-[15px] text-cgrey w-[258px] lg:w-[211px]"
+                />
+                <label
+                  for="type"
+                  class="text-white bg-cblue py-4 px-[17px] lg:px-[10px] sbold text-sm ring-1 ring-inset ring-cblue cursor-pointer"
+                  >Sign up</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
